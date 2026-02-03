@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Tablet Screen */
+@media (min-width: 751px) and (max-width: 1200px) {
+    .background{
+        height: 800px;
+    }
+
+    .logo{
+        width: 32%;
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: flex;
+        background-color: transparent;
+        position: relative;
+        right: -9px;
+    }
+
+    .nav-options {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        height: fit-content;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 15px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+
+    .contact-con .button{
+        width: 180px;
+    }
+
+
+    .nav-options .list {
+        flex-direction: column;
+        gap: 20px;
+        width: 200px;
+        height: 290px;
+        background-color: transparent;
+    }
+
+    .nav-options.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero{
+        height: 700px;
+    }
+
+    .hero h1{
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .hero .para{
+        width: 65%;
+        font-size: 18px;
+    }
+
+    .CTA{
+        width: 54%;
+    }
+
+    .desc-num{
+        width: 40%;
+    }
+
+    .num{
+        font-size: 30px;
+    }
+
+    .box p{
+        font-size: 12px;
+    }
+}
+
+
+
+/* Mobile Screen */
+
+@media (min-width: 0) and (max-width: 750px) {
+    .background{
+        height: 680px;
+    }
+    .logo{
+        width: 56%;
+        font-size: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+        background-color: transparent;
+        position: relative;
+        right: -20px;
+    }
+
+    .nav-options {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 200px;
+        height: fit-content;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 15px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+
+    .contact-con .button{
+        width: 180px;
+    }
+
+
+    .nav-options .list {
+        flex-direction: column;
+        gap: 20px;
+        width: 200px;
+        height: 290px;
+        background-color: transparent;
+    }
+
+    .nav-options.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero{
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+    }
+
+    .floatTag{
+        width: 220px;
+        margin-left: 0;
+    }
+
+    .hero .floatTag p{
+        position: absolute;
+        font-size: 11px;
+        right: 2;
+    }
+
+    .hero h1{
+        font-size: 34px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .hero .para{
+        width: 85%;
+        font-size: 15px;
+    }
+
+    .CTA{
+        width: 90%;
+        flex-direction: column;
+        height: 125px;
+    }
+
+    .desc-num{
+        width: 85%;
+    }
+
+    .num{
+        font-size: 30px;
+    }
+
+    .box p{
+        font-size: 11px;
+    }
+}

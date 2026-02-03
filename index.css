@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.background{
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(rgba(26, 22, 20, 0.6)), 
+    url('media/background1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease,
+    backdrop-filter 0.3s ease;
+}
+
+.nav-bar.scrolled{
+    background-color: rgba(12, 10, 8, 0.808);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    width: 24%;
+    height: 90px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo h2{
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    background-clip: text;
+    color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.dance{
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    gap: 5px;
+    margin-right: 40px;
+}
+
+.hamburger span {
+    width: 85%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.4s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-options{
+    width: 65%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-options ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    height: 90px;
+    width: 52%;
+    font-size: 14px;
+}
+
+.nav-options ul li a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(192, 172, 156);
+    padding-bottom: 6px;
+}
+
+.nav-options ul li a:hover{
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-options ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    color: white;
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    transition: width 0.4s ease;
+}
+
+.nav-options ul li a:hover::after {
+    width: 100%;
+    
+}
+
+.nav-options ul li a i{
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+
+.contact-con{
+    width: 20%;
+    height: 90px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.button {
+    cursor: pointer;
+    position: relative;
+    width: 90px;
+    height: 40px;       
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+    scale: 2;
+}
+
+.button:hover {
+    scale: 1.1;
+    box-shadow: 0 0 40px hsl(15 90% 58% / 0.3);
+}
+
+.button:active {
+    scale: 1;
+}
+
+.hero{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 80px;
+}
+
+.floatTag{
+    position: relative;
+    width: 250px;
+    height: 38px;
+    background-color: rgba(161, 64, 31, 0.096);
+    border-radius: 30px;
+    border: 1px solid rgb(161, 64, 31);
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(202, 81, 41);
+}
+
+.hero .floatTag p{
+    position: absolute;
+    font-size: 13px;
+    right: 20px;
+}
+
+.floatTag i{
+    position: absolute;
+    font-size: 40px;
+    left: 3px;
+    animation: pulseRhythm 3s ease-in-out infinite;
+}
+
+@keyframes pulseRhythm {
+    0%, 100%{
+        color: rgba(202, 81, 41, 0.527);
+    }
+    50%{
+        color: rgb(202, 81, 41);
+    }
+}
+
+.hero h1{
+    font-size: 72px;
+    font-weight: 900;
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    background-clip: text;
+    color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hero .heroh1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 900;
+}
+
+.hero .para{
+    width: 48%;
+    text-align: center;
+    font-size: 21px;
+    color: rgb(192, 172, 156);
+}
+
+.CTA{
+    width: 37%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.customBtn{
+    width: 260px;
+    height: 55px;
+    font-size: 16px;
+}
+
+.myBtn{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 210px;
+    height: 55px;
+    font-weight: 500;
+}
+
+.myBtn:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.desc-num{
+    width: 35%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    width: 25%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.num{
+    font-size: 35px;
+    color: rgba(244, 109, 49);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 900;
+    font-weight: 550;
+}
+
+.box p{
+    font-size: 14px;
+    color: rgb(138, 119, 102);
+}
+
+.floating{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floatingAnimation{
+    width: 17px;
+    height: 32px;
+    background-color: transparent;
+    border: 2px solid rgb(138, 119, 102);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    animation: float 6s ease-in-out infinite;
+}
+
+.line{
+    width: 3px;
+    height: 12px;
+    background-color: rgba(244, 109, 49);
+    border-radius: 10px;
+    margin-top: 6px;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.about{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(27, 24, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-about{
+    width: 94%;
+    height: 780px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story{
+    width: 50%;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h5{
+    color: rgba(244, 109, 49);
+    font-size: 15px;
+}
+
+.story h1{
+    width: 75%;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.story .grad{
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    background-clip: text;
+    color: transparent;
+}
+
+.story p{
+    width: 90%;
+    font-size: 17px;
+    color: rgb(192, 172, 156);
+}
+
+.lastp{
+    margin-bottom: 15px;
+}
+
+.mission{
+    width: 90%;
+    height: 200px;
+    border: 1px solid rgba(124, 110, 99, 0.781);
+    background-color: rgba(24, 18, 15, 0.342);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-mission{
+    width: 92%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sub-mission h3{
+    color: white;
+    font-size: 19px;
+}
+
+.sub-mission p{
+    font-size: 15px;
+}
+
+.value{
+    width: 45%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coreValue{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coreValue .box{
+    width: 45%;
+    height: 200px;
+    border: 1px solid rgba(124, 110, 99, 0.781);
+    background-color: rgba(24, 18, 15, 0.342);
+    border-radius: 15px;
+}
+
+.sub-box{
+    width: 83%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box .sub-box-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    background-color: rgb(52, 33, 24);
+}
+
+.box .sub-box-icon i{
+    color: rgb(216, 89, 27);;
+}
+
+.box .sub-box h3{
+    color: white;
+}
+
+.box .sub-box p{
+    color: rgb(192, 172, 156);
+}
