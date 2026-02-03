@@ -357,7 +357,7 @@ html {
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
 }
 
 .line{
