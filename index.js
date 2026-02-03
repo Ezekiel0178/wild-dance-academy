@@ -1,6 +1,6 @@
 let navbar = document.getElementById('nav-bar');
 window.addEventListener("scroll", () => {
-    if(window.scrollY > 80) {
+    if(window.scrollY > 30) {
         navbar.classList.add("scrolled");
     }
     else{
