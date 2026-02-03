@@ -151,8 +151,8 @@
         height: 680px;
     }
     .logo{
-        width: 56%;
-        font-size: 10px;
+        width: 58%;
+        font-size: 10.5px;
     }
 
     .hamburger {
@@ -277,6 +277,10 @@
     .mission{
         width: 100%;
         height: 145px;
+    }
+
+    .sub-mission{
+        width: 85%;
     }
 
     .sub-mission h3{
