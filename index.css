@@ -28,8 +28,8 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: background-color 0.3s ease,
-    backdrop-filter 0.3s ease;
+    transition: background-color  ease,
+    backdrop-filter  ease;
 }
 
 .nav-bar.scrolled{
