@@ -33,7 +33,8 @@ html {
 }
 
 .nav-bar.scrolled{
-    background-color: rgba(12, 10, 8, 0.808);
+    /* background-color: rgba(12, 10, 8, 0.808); */
+    background-color: rgb(18, 15, 13);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -270,7 +271,7 @@ html {
 .hero .para{
     width: 48%;
     text-align: center;
-    font-size: 21px;
+    font-size: 20px;
     color: rgb(192, 172, 156);
 }
 
@@ -299,6 +300,7 @@ html {
     width: 210px;
     height: 55px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .myBtn:hover{
@@ -411,7 +413,7 @@ h5{
     line-height: 45px;
 }
 
-.story .grad{
+.grad{
     background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
     background-clip: text;
     color: transparent;
@@ -430,7 +432,7 @@ h5{
 .mission{
     width: 90%;
     height: 200px;
-    border: 1px solid rgba(124, 110, 99, 0.781);
+    border: 1px solid rgba(124, 110, 99, 0.253);
     background-color: rgba(24, 18, 15, 0.342);
     border-radius: 15px;
     display: flex;
@@ -457,7 +459,7 @@ h5{
 }
 
 .value{
-    width: 45%;
+    width: 40%;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -473,11 +475,16 @@ h5{
 }
 
 .coreValue .box{
-    width: 45%;
+    width: 47.5%;
     height: 200px;
-    border: 1px solid rgba(124, 110, 99, 0.781);
+    border: 1px solid rgba(124, 110, 99, 0.253);
     background-color: rgba(24, 18, 15, 0.342);
     border-radius: 15px;
+    transition: 0.3s ease-in;
+}
+
+.coreValue .box:hover{
+    border: 1px solid rgb(161, 64, 31);
 }
 
 .sub-box{
@@ -500,7 +507,8 @@ h5{
 }
 
 .box .sub-box-icon i{
-    color: rgb(216, 89, 27);;
+    animation: pulseRhythm 3s ease-in-out infinite;
+    color: rgb(216, 89, 27);
 }
 
 .box .sub-box h3{
@@ -509,4 +517,155 @@ h5{
 
 .box .sub-box p{
     color: rgb(192, 172, 156);
+}
+
+.classes{
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(18, 15, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-classes{
+    width: 94%;
+    height: 1100px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header{
+    width: 100%;
+    height: 200px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.headText{
+    font-size: 45px;
+}
+
+.paragraph{
+    width: 55%;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(192, 172, 156);
+}
+
+.classCards{
+    width: 100%;
+    height: 870px;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.classCards .card{
+    width: 31%;
+    height: 430px;
+    border: 1px solid rgba(124, 110, 99, 0.253);
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.classCards .card:hover{
+    border-color: rgb(161, 64, 31);
+}
+
+.classCards .card .image{
+    width: 100%;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.image1{
+    background: url('media/class-afro-BXqCf5Kd.jpg');
+}
+
+.image2{
+    background: url('media/class-hiphop-DnKGCbMf.jpg');
+}
+
+.image3{
+    background: url('media/class-contemporary-B6n3BQQ0.jpg');
+}
+
+.image4{
+    background: url('media/class-kids-B1coBQZh.jpg');
+}
+
+.image5{
+    background: url('media/danceFit.jpg');
+}
+
+.image6{
+    background: url('media/choreography.jpg');
+}
+
+.image .overlay{
+    width: 100%;
+    height: 430px;
+    background: linear-gradient( to bottom,rgba(0, 0, 0, 0)10% , rgba(29, 27, 27, 0.990) 63% ); 
+    border-radius: 10px;
+}
+
+.overlay .empty{
+    width: 100%;
+    height: 260px;
+}
+
+.overlay .text{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .text .sub-text{
+    width: 92%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sub-text h2{
+    font-size: 20px;
+    color: rgb(199, 190, 184);
+}
+
+.sub-text p{
+    font-size: 13px;
+    color: rgb(192, 172, 156);
+}
+
+.sub-text button{
+    width: 110px;
+    height: 35px;
+    font-size: 12px;
+    background-color: rgb(18, 15, 13);
+    border: 1px solid rgba(124, 110, 99, 0.253);
+    border-radius: 8px;
+    color: rgb(192, 172, 156);
+    transition: all 0.3s ease;
+}
+
+.classCards .card:hover .text button{
+    border-color: rgb(161, 64, 31);
+    color: rgb(244, 109, 49);
 }

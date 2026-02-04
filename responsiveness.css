@@ -319,4 +319,33 @@
     .coreValue .box p{
         font-size: 13px;
     }
+
+    .classes{
+        height: 3000px;
+    }
+
+    .sub-classes{
+        width: 90%;
+        flex-direction: column;
+        height: 2900px;
+    }
+
+    .headText{
+        font-size: 30px;
+    }
+
+    .paragraph{
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .classCards{
+        width: 100%;
+        height: 2900px;
+        gap: 20px;
+    }
+
+    .classCards .card{
+        width: 100%;
+    }
 }
