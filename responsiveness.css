@@ -90,7 +90,7 @@
     }
 
     .sub-about{
-        width: 93%;
+        width: 95%;
         height: 1500px;
         flex-direction: column;
         justify-content: center;
@@ -140,6 +140,49 @@
     .coreValue .sub-box{
         width: 88%;
     }
+
+    .classes{
+        height: 1800px;
+    }
+
+    .sub-classes{
+        width: 95%;
+        height: 1600px;
+    }
+
+    .headText{
+        font-size: 40px;
+    }
+    
+    .classCards{
+        width: 100%;
+        height: 1400px;
+    }
+
+    .classCards .card{
+        width: 47.5%;
+    }
+
+    .schedule{
+        height: 1700px;
+    }
+
+    .sub-schedule{
+        height: 1500px;
+    }
+
+    .contentCon{
+        flex-direction: column;
+        height: 1065px;
+    }
+
+    .scheduleCon{
+        width: 100%;
+    }
+
+    .benefit{
+        width: 90%;
+    }
 }
 
 
@@ -151,8 +194,11 @@
         height: 680px;
     }
     .logo{
-        width: 58%;
-        font-size: 10.5px;
+        width: 52%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 10.8px;
+        margin-left: 15px;
     }
 
     .hamburger {
@@ -347,5 +393,92 @@
 
     .classCards .card{
         width: 100%;
+    }
+
+    .schedule{
+        height: 1700px;
+    }
+
+    .sub-schedule{
+        width: 90%;
+        height: 1600px;
+    }
+
+    .contentCon{
+        flex-direction: column;
+        height: 1300px;
+    }
+
+    .scheduleCon{
+        width: 100%;
+        height: 500px;
+    }
+
+    .backdrop{
+        height: 130px;
+    }
+
+    .scheduleBox{
+        width: 98%;
+        height: 130px;
+    }
+
+    .sub-scheduleBox{
+        width: 92%;
+        height: 100px;
+    }
+
+    .sub-scheduleBox .head{
+        height: 45px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .priceCon{
+        width: 100%;
+        height: 800px;
+    }
+
+    .priceCon .priceFlexcon{
+        height: 800px;
+    }
+
+    .priceCon .priceFlexcon .priceBox{
+        height: 230px;
+    }
+
+    .priceCon .priceFlexcon .priceBox .sub-priceBox{
+        width: 92%;
+        height: 200px;
+    }
+
+    .priceCon .priceFlexcon .priceBox .sub-priceBox .head{
+        height: 95px;
+        flex-direction: column;
+    }
+
+    .priceCon .priceFlexcon .priceBox .sub-priceBox .head .desc{
+        width: 100%;
+    }
+
+    .priceCon .priceFlexcon .priceBox .sub-priceBox .head .price{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .priceCon .priceFlexcon .priceBox .sub-priceBox .benefit{
+        width: 100%;
+        height: 100px;
+    }
+
+    .priceCon .priceFlexcon .priceBox .sub-priceBox .benefit .box1{
+        align-items: center;
+        height: 100px;
+    }
+
+    .cta p{
+        font-size: 13px;
+        text-align: center;
     }
 }

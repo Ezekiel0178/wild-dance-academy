@@ -487,6 +487,10 @@ h5{
     border: 1px solid rgb(161, 64, 31);
 }
 
+.coreValue .box:hover .sub-box-icon{
+    background-color: rgba(161, 64, 31, 0.342);
+}
+
 .sub-box{
     width: 83%;
     height: 160px;
@@ -624,6 +628,28 @@ h5{
 .overlay .empty{
     width: 100%;
     height: 260px;
+    position: relative;
+}
+
+.overlay .empty .classSpec{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    /* color: rgb(244, 109, 49); */
+    color: white;
+    letter-spacing: 1px;
+}
+
+.Spec1{
+    background-color: hsl(15, 94%, 56%);
+}
+
+.Spec2{
+    background-color: rgba(255, 255, 255, 0.171);
+    border: 1px solid rgba(255, 255, 255, 0.171);
 }
 
 .overlay .text{
@@ -668,4 +694,277 @@ h5{
 .classCards .card:hover .text button{
     border-color: rgb(161, 64, 31);
     color: rgb(244, 109, 49);
+}
+
+.schedule{
+    width: 100%;
+    height: 1100px;
+    background-color: rgb(27, 24, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-schedule{
+    width: 94%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contentCon{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scheduleCon{
+    width: 45%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scheduleCon i{
+    color: hsl(15 90% 58%);
+}
+
+.scheduleCon h3{
+    color: whitesmoke;
+    font-size: 23px;
+}
+
+.scheduleFlexcon{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.backdrop{
+    width: 100%;
+    height: 130px;
+    border: none;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.backdrop:hover{
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.backdrop1{
+    border-left: 4px solid hsl(15 90% 58%);
+}
+
+.backdrop2{
+    border-left: 4px solid hsl(42 95% 55%);
+}
+
+.backdrop3{
+    border-left: 4px solid purple;
+}
+
+.scheduleBox{
+    width: 100%;
+    height: 130px;
+    border: 1px solid rgba(124, 110, 99, 0.253);
+    background-color: rgba(24, 18, 15, 0.342);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-scheduleBox{
+    width: 94%;
+    height: 90px;
+}
+
+.sub-scheduleBox .head{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-scheduleBox .head h4{
+    color: white;
+    font-size: 18px;
+}
+
+.sub-scheduleBox .head .time{
+    color: hsl(15, 94%, 56%);
+    font-size: 12px;
+}
+
+.sub-scheduleBox .text{
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(192, 172, 156);
+}
+
+.priceCon{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.priceCon .priceFlexcon{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.priceBox{
+    width: 100%;
+    height: 155px;
+    border: 1px solid rgba(124, 110, 99, 0.253);
+    background-color: rgba(24, 18, 15, 0.342);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceBox:hover{
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.sub-priceBox{
+    width: 94%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-priceBox .head{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-priceBox .head .desc{
+    width: 40%;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.sub-priceBox .head .desc h4{
+    color: white;
+    font-size: 18px;
+}
+
+.sub-priceBox .head .price{
+    width: 40%;
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.priceParagraph{
+    font-size: 13px;
+    color: rgb(192, 172, 156);
+}
+
+.priceValue{
+    font-size: 25px;
+    color: rgb(244, 109, 49);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.paymentPattern{
+    font-size: 12px;
+    color: rgb(192, 172, 156);
+    margin-top: 8px;
+}
+
+.benefit{
+    width: 87%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1{
+    width: 43%;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.priceBox1{
+    background-color: hsl(15, 94%, 56%);
+    position: relative;
+}
+
+.priceBox1 .priceParagraph,.priceBox1 .priceValue,.priceBox1 .paymentPattern{
+    color: white;
+}
+
+.priceBox1 .bi-check2-circle{
+    /* color: hsl(42 95% 55%); */
+    color: yellow;
+}
+
+.priceBox1 .tag{
+    position: absolute;
+    top: -14px;
+    right: 15px;
+    background-color: yellow;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cta{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta p{
+    font-size: 16px;
+    color: white;
+}
+
+.customBtn2{
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
 }
