@@ -923,6 +923,11 @@ h5{
     gap: 8px;
 }
 
+.sub-box1{
+    display: flex;
+    gap: 7px;
+}
+
 .priceBox1{
     background-color: hsl(15, 94%, 56%);
     position: relative;

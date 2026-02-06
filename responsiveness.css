@@ -428,6 +428,10 @@
         height: 100px;
     }
 
+    .sub-scheduleBox .text{
+        font-size: 12px;
+    }
+
     .sub-scheduleBox .head{
         height: 45px;
         flex-direction: column;
@@ -475,6 +479,16 @@
     .priceCon .priceFlexcon .priceBox .sub-priceBox .benefit .box1{
         align-items: center;
         height: 100px;
+    }
+
+    .benefit .box1{
+        width: 48%;
+    }
+
+    .sub-box1{
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
     .cta p{
