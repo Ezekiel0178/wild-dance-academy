@@ -105,6 +105,16 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: drop 0.8s ease-in-out;
+}
+
+@keyframes drop {
+    0% { 
+        transform: translateY(-5px);
+    }
+    100% {  
+        transform: translateY(0);
+    }
 }
 
 .nav-options ul{
@@ -488,8 +498,9 @@ h5{
 }
 
 .coreValue .box:hover .sub-box-icon{
-    background-color: rgba(161, 64, 31, 0.342);
+    background-color: rgba(161, 64, 31, 0.438);
 }
+
 
 .sub-box{
     width: 83%;
@@ -507,7 +518,7 @@ h5{
     justify-content: center;
     align-items: center;
     font-size: 23px;
-    background-color: rgb(52, 33, 24);
+    background-color: rgba(52, 33, 24, 0.904);
 }
 
 .box .sub-box-icon i{
