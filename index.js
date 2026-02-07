@@ -11,6 +11,7 @@ window.addEventListener("scroll", () => {
 function toggleMenu() {
     const hamburger = document.querySelector('.hamburger');
     const menu = document.getElementById('navMenu');
+    const close = document.querySelectorAll('.nav-options a');
 
     hamburger.classList.toggle('active');
     menu.classList.toggle('show');
@@ -20,5 +21,12 @@ function toggleMenu() {
         menu.classList.remove('show');
         hamburger.classList.remove('active');
     }
+    });
+
+    close.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('show');
+            hamburger.classList.remove('active');
+        });
     });
 }
