@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
                 clearInterval(fadeIn);
             }
         }, 60);
-    }, 6000); 
+    }, 4000); 
 });
 
 let navbar = document.getElementById('nav-bar');
