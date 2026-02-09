@@ -26,6 +26,9 @@ html {
     animation: loading 1s linear infinite;
 }
 
+.fade-out{
+    animation: fadeOut 1s ease forwards;
+}
 
 @keyframes loading {
     0%,100%{
@@ -202,7 +205,6 @@ html {
 .contact-con{
     width: 20%;
     height: 90px;
-    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -323,11 +325,11 @@ html {
 }
 
 .CTA{
-    width: 37%;
+    width: 50%;
     height: 80px;
-    background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -547,7 +549,7 @@ h5{
     gap: 15px;
 }
 
-.box .sub-box-icon{
+.sub-box-icon{
     width: 45px;
     height: 45px;
     border-radius: 10px;
@@ -558,16 +560,16 @@ h5{
     background-color: rgba(52, 33, 24, 0.904);
 }
 
-.box .sub-box-icon i{
+.sub-box-icon i{
     animation: pulseRhythm 3s ease-in-out infinite;
     color: rgb(216, 89, 27);
 }
 
-.box .sub-box h3{
+.sub-box h3{
     color: white;
 }
 
-.box .sub-box p{
+.sub-box p{
     color: rgb(192, 172, 156);
 }
 
@@ -1020,4 +1022,76 @@ h5{
     width: 200px;
     height: 45px;
     font-size: 14px;
+}
+
+.reason{
+    width: 100%;
+    height: 970px;
+    background-color: rgb(18, 15, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-reason{
+    width: 94%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.reasonFlexbox{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.reasonBox{    
+    width: 31.3%;
+    height: 250px;
+    border: 1px solid rgba(124, 110, 99, 0.253);
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-reasonBox{
+    width: 85%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.reasonIcon{
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+}
+
+.reasonh3{
+    color: white;
+    font-size: 18px;
+}
+
+.reasonParagraph{
+    font-size: 14px;
+    text-align: center;
+}
+
+.reasonBox:hover{
+    border: 1px solid rgb(161, 64, 31);
+}
+
+.reasonBox:hover .sub-box-icon{
+    background-color: rgba(161, 64, 31, 0.438);
 }

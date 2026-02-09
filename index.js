@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
         loader.style.display = 'none';
         content.style.display = 'block';
-            // Add fade-in effect to content
+
         content.style.opacity = 0;
         let opacity = 0;
         const fadeIn = setInterval(() => {
@@ -15,8 +15,9 @@ window.addEventListener('load', () => {
                 clearInterval(fadeIn);
             }
         }, 60);
-        }, 6000); 
+    }, 6000); 
 });
+
 let navbar = document.getElementById('nav-bar');
 window.addEventListener("scroll", () => {
     if(window.scrollY > 30) {
