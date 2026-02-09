@@ -1,14 +1,22 @@
-window.onload = function() {
+window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     const content = document.getElementById('content');
-
-    loader.classList.add('fade-out');
     setTimeout(() => {
         loader.style.display = 'none';
         content.style.display = 'block';
-    }, 500);
-}
-
+            // Add fade-in effect to content
+        content.style.opacity = 0;
+        let opacity = 0;
+        const fadeIn = setInterval(() => {
+            if (opacity < 1) {
+                opacity += 0.1;
+                content.style.opacity = opacity;
+            } else {
+                clearInterval(fadeIn);
+            }
+        }, 60);
+        }, 6000); 
+});
 let navbar = document.getElementById('nav-bar');
 window.addEventListener("scroll", () => {
     if(window.scrollY > 30) {

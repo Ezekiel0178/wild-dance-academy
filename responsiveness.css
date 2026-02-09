@@ -10,8 +10,12 @@
     }
 
     .logo{
-        width: 32%;
-        font-size: 14px;
+        width: 15%;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
     }
 
     .hamburger {
@@ -197,8 +201,12 @@
         width: 52%;
         display: flex;
         justify-content: flex-start;
-        font-size: 10.8px;
         margin-left: 15px;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 60px;
     }
 
     .hamburger {
