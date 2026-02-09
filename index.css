@@ -50,7 +50,7 @@ html {
     width: 100%;
     height: 650px;
     background: linear-gradient(rgba(26, 22, 20, 0.6)), 
-    url('media/background1.webp');
+    url('media/background.webp');
     background-size: cover;
     background-position: center;
 }
@@ -77,21 +77,22 @@ html {
 }
 
 .logo{
-    width: 12%;
-    height: 90px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 22%;
+    height: 85px;
 }
 
 .logo img{
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
 }
 
 .logo a{
+    height: 85px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo h2{
@@ -102,6 +103,7 @@ html {
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 900;
+    font-size: 16px;
 }
 
 .dance{
@@ -141,7 +143,7 @@ html {
 
 .nav-options{
     width: 65%;
-    height: 90px;
+    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,8 +205,8 @@ html {
 
 
 .contact-con{
-    width: 20%;
-    height: 90px;
+    width: 15%;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
