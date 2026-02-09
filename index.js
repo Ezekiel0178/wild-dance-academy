@@ -1,3 +1,14 @@
+window.onload = function() {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('content');
+
+    loader.classList.add('fade-out');
+    setTimeout(() => {
+        loader.style.display = 'none';
+        content.style.display = 'block';
+    }, 500);
+}
+
 let navbar = document.getElementById('nav-bar');
 window.addEventListener("scroll", () => {
     if(window.scrollY > 30) {
