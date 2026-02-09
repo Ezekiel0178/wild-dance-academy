@@ -5,6 +5,10 @@
 
 /* Tablet Screen */
 @media (min-width: 801px) and (max-width: 1200px) {
+    .loader{
+        overflow: hidden;
+    }
+    
     .background{
         height: 800px;
     }
@@ -213,6 +217,10 @@
 /* Mobile Screen */
 
 @media (min-width: 0) and (max-width: 800px) {
+    .loader{
+        overflow: hidden;
+    }
+
     .background{
         height: 680px;
     }

@@ -77,18 +77,17 @@ html {
 }
 
 .logo{
-    width: 15%;
+    width: 12%;
     height: 90px;
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .logo img{
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
 }
 
 .logo a{
