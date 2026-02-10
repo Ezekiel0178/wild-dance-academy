@@ -1097,3 +1097,124 @@ h5{
 .reasonBox:hover .sub-box-icon{
     background-color: rgba(161, 64, 31, 0.438);
 }
+
+.testimonials{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(27, 24, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-testimonials{
+    width: 94%;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonialsFlexcon{
+    width: 100%;
+    height: 535px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonialsBox{
+    width: 48.6%;
+    height: 250px;
+    border: 1px solid rgba(124, 110, 99, 0.253);
+    background-color: rgba(24, 18, 15, 0.342);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-testimonialsBox{
+    width: 90%;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+     
+}
+
+.symbols{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.stars{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.quote{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.testimonialsP{
+    width: 93%;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.profile{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.profile-image-con{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image{
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.profile-desc{
+    width: 70%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.profile-desc h3{
+    font-size: 18px;
+    color: white;
+}
+
+.profile-desc p{
+    font-size: 13px;
+    color: rgb(192, 172, 156);
+}
