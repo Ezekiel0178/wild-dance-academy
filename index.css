@@ -647,19 +647,19 @@ h5{
 }
 
 .image1{
-    background: url('media/class-afro-BXqCf5Kd.jpg');
+    background: url('media/class-afro.jpg');
 }
 
 .image2{
-    background: url('media/class-hiphop-DnKGCbMf.jpg');
+    background: url('media/class-hiphop.jpg');
 }
 
 .image3{
-    background: url('media/class-contemporary-B6n3BQQ0.jpg');
+    background: url('media/class-contemporary.jpg');
 }
 
 .image4{
-    background: url('media/class-kids-B1coBQZh.jpg');
+    background: url('media/class-kids.jpg');
 }
 
 .image5{
@@ -690,7 +690,6 @@ h5{
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 12px;
-    /* color: rgb(244, 109, 49); */
     color: white;
     letter-spacing: 1px;
 }
@@ -702,6 +701,24 @@ h5{
 .Spec2{
     background-color: rgba(255, 255, 255, 0.171);
     border: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.Spec3{
+    background-color: rgba(255, 255, 255, 0.171);
+    border: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.Spec4{
+    background-color: hsl(15, 94%, 56%);
+}
+
+.Spec5{
+    background-color: rgba(255, 255, 255, 0.171);
+    border: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.Spec6{
+    background-color: hsl(15, 94%, 56%);
 }
 
 .overlay .text{
