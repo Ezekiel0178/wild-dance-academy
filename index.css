@@ -1,8 +1,17 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Roboto Slab", serif;
+    /* font-family: "Roboto Slab", serif; */
 }
+
+:root{
+    --paragraph: rgb(209, 186, 166);
+    --font-primary: "Roboto Slab", serif;
+    --font-secondary: "Rubik", sans-serif;
+}
+
+
+
 
 html {
     scroll-behavior: smooth;
@@ -93,15 +102,14 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    font-family: var(--font-primary);
 }
 
 .logo h2{
     background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
     background-clip: text;
     color: transparent;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: var(--font-secondary);
     font-weight: 900;
     font-size: 16px;
 }
@@ -174,6 +182,7 @@ html {
     text-decoration: none;
     color: rgb(192, 172, 156);
     padding-bottom: 6px;
+    font-family: var(--font-secondary);
 }
 
 .nav-options ul li a:hover{
@@ -226,6 +235,7 @@ html {
     color: black;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
+    font-family: var(--font-primary);
 }
 
 .button::before {
@@ -283,6 +293,7 @@ html {
     position: absolute;
     font-size: 13px;
     right: 20px;
+    font-family: var(--font-primary);
 }
 
 .floatTag i{
@@ -290,6 +301,7 @@ html {
     font-size: 40px;
     left: 3px;
     animation: pulseRhythm 3s ease-in-out infinite;
+    font-family: var(--font-primary);
 }
 
 @keyframes pulseRhythm {
@@ -307,15 +319,11 @@ html {
     background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
     background-clip: text;
     color: transparent;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: var(--font-secondary);
 }
 
 .hero .heroh1{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: var(--font-secondary);
     font-size: 900;
 }
 
@@ -324,6 +332,7 @@ html {
     text-align: center;
     font-size: 20px;
     color: rgb(192, 172, 156);
+    font-family: var(--font-primary);
 }
 
 .CTA{
@@ -350,8 +359,8 @@ html {
     border-radius: 10px;
     width: 210px;
     height: 55px;
-    font-weight: 500;
     cursor: pointer;
+    font-family: var(--font-primary);
 }
 
 .myBtn:hover{
@@ -381,9 +390,7 @@ html {
 .num{
     font-size: 35px;
     color: rgba(244, 109, 49);
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: var(--font-secondary);
     font-size: 900;
     font-weight: 550;
 }
@@ -391,6 +398,7 @@ html {
 .box p{
     font-size: 14px;
     color: rgb(138, 119, 102);
+    font-family: var(--font-primary);
 }
 
 .floating{
@@ -456,24 +464,28 @@ html {
 h5{
     color: rgba(244, 109, 49);
     font-size: 15px;
+    font-family: var(--font-secondary);
 }
 
 .story h1{
     width: 75%;
     font-size: 40px;
     line-height: 45px;
+    font-family: var(--font-secondary);
 }
 
 .grad{
     background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
     background-clip: text;
     color: transparent;
+    font-family: var(--font-secondary);
 }
 
 .story p{
     width: 90%;
     font-size: 17px;
     color: rgb(192, 172, 156);
+    font-family: var(--font-primary);
 }
 
 .lastp{
@@ -502,11 +514,12 @@ h5{
 
 .sub-mission h3{
     color: white;
-    font-size: 19px;
+    font-size: 18px;
+    font-family: var(--font-primary);
 }
 
 .sub-mission p{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .value{
@@ -560,6 +573,7 @@ h5{
     align-items: center;
     font-size: 23px;
     background-color: rgba(52, 33, 24, 0.904);
+    font-family: var(--font-primary);
 }
 
 .sub-box-icon i{
@@ -573,6 +587,7 @@ h5{
 
 .sub-box p{
     color: rgb(192, 172, 156);
+    font-size: 14px;
 }
 
 .classes{
@@ -587,7 +602,6 @@ h5{
 .sub-classes{
     width: 94%;
     height: 1100px;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -598,7 +612,6 @@ h5{
 .header{
     width: 100%;
     height: 200px;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -615,12 +628,12 @@ h5{
     font-size: 15px;
     text-align: center;
     color: rgb(192, 172, 156);
+    font-family: var(--font-primary);
 }
 
 .classCards{
     width: 100%;
     height: 870px;
-    /* background-color: blue; */
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
@@ -737,6 +750,7 @@ h5{
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
+    font-family: var(--font-primary);
 }
 
 .sub-text h2{
@@ -758,6 +772,7 @@ h5{
     border-radius: 8px;
     color: rgb(192, 172, 156);
     transition: all 0.3s ease;
+    font-family: var(--font-primary);
 }
 
 .classCards .card:hover .text button{
@@ -797,6 +812,7 @@ h5{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: var(--font-primary);
 }
 
 .scheduleCon i{
@@ -1038,7 +1054,7 @@ h5{
 }
 
 .customBtn2{
-    width: 200px;
+    width: 150px;
     height: 45px;
     font-size: 14px;
 }
@@ -1089,6 +1105,7 @@ h5{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-family: var(--font-primary);
 }
 
 .reasonIcon{
@@ -1149,6 +1166,7 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--font-primary);
 }
 
 .sub-testimonialsBox{
@@ -1234,4 +1252,303 @@ h5{
 .profile-desc p{
     font-size: 13px;
     color: rgb(192, 172, 156);
+}
+
+.registration{
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(18, 15, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-registration{
+    width: 94%;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.process{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.processHeader{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.processHead{
+    font-size: 14px;
+}
+
+.processHeadtext{
+    font-size: 30px;
+}
+
+.processCon{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.processCon::before{
+    content: " ";
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: #ff7818b6;
+    z-index: 1;
+}
+
+.steps{
+    width: 23.5%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+    font-family: var(--font-primary);
+}
+
+.steps:hover .circle{
+    box-shadow: 0 0 60px hsla(15, 90%, 58%, 0.562);
+    transition: 0.4s ease;
+}
+
+.steps:hover .processH4{
+    color: hsl(15, 94%, 56%);
+    transition: 0.4s ease;
+}
+
+.steps:hover i{
+    color: white;
+    transition: 0.4s ease;
+}
+
+.circle{
+    position: relative;
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    border-radius: 50%;
+    box-shadow: 0 0 45px hsla(15, 90%, 58%, 0.445);
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.number{
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(15 90% 58%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-number{
+    width: 25.4px;
+    height: 25.4px;
+    background-color: black;
+    border-radius: 50%;
+    color: hsl(15 90% 58%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-secondary);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.steps h4{
+    font-size: 18px;
+    font-weight: 550;
+    transition: 0.3s ease;
+}
+.stepsP{
+    width: 80%;
+    text-align: center;
+}
+
+.contact{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.registerLink{
+    width: 65%;
+    height: 280px;
+    background-color: hsla(15, 94%, 56%, 0.034);
+    border: 1px solid hsla(15, 94%, 56%, 0.26);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-registerLink{
+    width: 92%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.sub-registerLink i{
+    color: hsl(15 90% 58%);
+    font-size: 40px;
+}
+
+.registerLinkh4{
+    font-size: 22px;
+}
+
+.registerLink a{
+    text-decoration: none;
+    width: 180px;
+}
+
+.registerBtn{
+    width: 180px;
+    height: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.contactCon{
+    width: 35%;
+    height: 440px;
+    border-radius: 15px;
+    border: 1px solid rgba(124, 110, 99, 0.253);
+    background-color: rgba(49, 42, 38, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.sub-contactCon{
+    width: 85%;
+    height: 390px;
+}
+
+.top-box{
+    width: 100%;
+    height: 220px;
+}
+
+.tB-header{
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.tB-details{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.tB-icon{
+    width: 17%;
+    height: 78px;
+    display: flex;
+    align-items: center;
+}
+
+.tB-text{
+    width: 83%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mail{
+    text-decoration: none;
+    color: var(--paragraph);
+    font-family: var(--font-primary);
+    font-size: 14px;
+}
+
+.email:hover{
+    color: hsl(15, 94%, 56%);
+    transition: 0.4s ease;
+}
+
+.bottom-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.171);
+}
+
+.bottom-icon{
+    width: 70%;
+    height: 70px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sub-box-icon2{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.171);
+    font-family: var(--font-primary);
+    color: white;
+}
+
+.sub-box-icon2:hover{
+    background-color: hsl(15, 94%, 56%);
+    color: black;
+    transition: 0.4s ease;
+    cursor: pointer;
 }
