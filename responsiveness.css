@@ -29,17 +29,15 @@
         right: -9px;
     }
 
-    .nav-options {
+.nav-options {
         display: none;
         position: absolute;
-        top: 70px;
-        right: 20px;
-        width: 200px;
+        top: 85px;
+        right: 0;
+        width: max-content;
         height: fit-content;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 16px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: rgb(18, 15, 13);
+        backdrop-filter: blur(8px);
         padding: 15px;
         box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         z-index: 1000;
@@ -48,7 +46,6 @@
     .contact-con .button{
         width: 180px;
     }
-
 
     .nav-options .list {
         flex-direction: column;
@@ -699,7 +696,7 @@
     }
 
     .steps{
-        width: 47%;
+        width: 46%;
         height: 260px;
         gap: 15px;
     }
@@ -727,7 +724,7 @@
     }
 
     .sub-registerLink{
-        width: 90%;
+        width: 85%;
     }
 
     .contactCon{
@@ -735,7 +732,7 @@
     }
 
     .sub-contactCon{
-        width: 90%;
+        width: 85%;
     }
 
     .tB-icon{

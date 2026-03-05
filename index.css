@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* font-family: "Roboto Slab", serif; */
 }
 
 :root{
@@ -10,9 +9,6 @@
     --font-secondary: "Rubik", sans-serif;
 }
 
-
-
-
 html {
     scroll-behavior: smooth;
     background-color: rgb(18, 15, 13);
@@ -20,35 +16,180 @@ html {
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-.loader{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(18, 15, 13);
+.loader {
+    position: fixed;
+    inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    z-index: 9999;
+}
+
+.loader.hide {
+    opacity: 0;
+}
+
+/* ===== CIRCLE RINGS ===== */
+.circle-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.pulse {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+/* First circle */
+.pulse-primary {
+    width: 8rem;  
+    height: 8rem;
+    border-color: hsl(15, 94%, 56%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulseAnimation 1.8s ease-in-out infinite;
+}
+
+/* Second circle */
+.pulse-accent {
+    width: 5rem;  
+    height: 5rem;
+    border-color: hsl(42 95% 55%);
+    animation-delay: 0.5s;
+    animation: pulseAnimation2 1.8s ease-in-out infinite;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.6);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+}
+
+@keyframes pulseAnimation2 {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+/* ===== STICK FIGURE ===== */
+.stick-figure {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stick-figure svg {
+    position: absolute;
+    bottom: -17px;
+    right: -17px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Animate limbs */
+.arm-left {
+    transform-origin: 12px 8px;
+    animation: armLeft 0.6s infinite alternate ease-in-out;
+}
+
+.arm-right {
+    transform-origin: 12px 8px;
+    animation: armRight 0.6s infinite alternate ease-in-out;
+}
+
+.leg-left {
+    transform-origin: 12px 14px;
+    animation: legLeft 0.6s infinite alternate ease-in-out;
+}
+
+.leg-right {
+    transform-origin: 12px 14px;
+    animation: legRight 0.6s infinite alternate ease-in-out;
+}
+
+/* Dance Keyframes */
+@keyframes armLeft {
+    from { transform: rotate(-20deg); }
+    to { transform: rotate(30deg); }
+}
+
+@keyframes armRight {
+    from { transform: rotate(20deg); }
+    to { transform: rotate(-30deg); }
+}
+
+@keyframes legLeft {
+    from { transform: rotate(-10deg); }
+    to { transform: rotate(20deg); }
+}
+
+@keyframes legRight {
+    from { transform: rotate(10deg); }
+    to { transform: rotate(-20deg); }
+}
+
+/* ===== TEXT ===== */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 5px;
+    font-family: var(--font-secondary);
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ccc;
+    margin-bottom: 30px;
+    font-family: var(--font-primary);
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+    width: 250px;
+    height: 4px;
+    background: #2a2a2a;
     overflow: hidden;
 }
 
-.loader img{
-    width: 100px;
-    height: 100px;
-    animation: loading 1s linear infinite;
-}
-
-.fade-out{
-    animation: fadeOut 1s ease forwards;
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(135deg, hsl(15 90% 58%), hsl(42 95% 55%));
+    animation: loading 5s ease forwards;
 }
 
 @keyframes loading {
-    0%,100%{
-        transform: scale(1);
-        opacity: 0.9;
-    }
-    50%{
-        transform: scale(1.15);
-        opacity: 1;
-    }
+    to { width: 100%; }
 }
 
 .content{
@@ -91,8 +232,8 @@ html {
 }
 
 .logo img{
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
 }
 
 .logo a{

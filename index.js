@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     const loader = document.getElementById('loader');
     const content = document.getElementById('content');
     setTimeout(() => {
@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
                 clearInterval(fadeIn);
             }
         }, 60);
-    }, 4000); 
+    }, 5000); 
 });
 
 let navbar = document.getElementById('nav-bar');
@@ -116,7 +116,9 @@ let classesDisplay = classes.map((classes, index) => {
 
                             <p>${classes.classDesc}</p>
 
-                            <button>Join this class</button>
+                            <a href="#registration">
+                                <button>Join this class</button>
+                            </a>
                         </div>
                     </div>
                 </div>
